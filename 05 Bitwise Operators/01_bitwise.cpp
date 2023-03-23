@@ -16,3 +16,4 @@ int main(){
 
 //For any number, if we and it with 1 and if it returns 1 then it is an odd number else an even number
 // if(a&1==1) { odd number } else if (a&1==0){ even number }
+//  a ^ a = 0; xor of two same numbers is 0
