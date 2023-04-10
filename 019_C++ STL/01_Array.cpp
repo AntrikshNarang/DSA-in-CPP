@@ -1,3 +1,5 @@
+// Array stores data at Contigous memory location
+// Array follows Last In First Out (LIFO) principle
 #include<iostream>
 #include<array>
 using namespace std;
@@ -30,3 +32,10 @@ int main() {
 
     return 0;
 }
+
+// Time Complexity of Array operations
+// Operation	Time Complexity
+// Access	O(1)
+// Search	O(n)
+// Insertion	O(n)
+// Deletion	O(n)

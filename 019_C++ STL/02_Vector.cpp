@@ -1,3 +1,4 @@
+// vector stores data at Contigous memory location
 #include<iostream>
 #include<vector>
 using namespace std;
@@ -5,12 +6,12 @@ int main(){
     // Initialize Vector
     vector <int> myVector;
 
-    // Vector with size 5 and all elements initialized to 1
+    // Vector with size & capacity = 5 and all elements initialized to 1
     vector <int> a(5,1);
     for( int i : a ){
         cout << i << " ";
     }
-    cout<<endl;
+    cout<<"capacity is " <<a.capacity()<<endl;
 
     vector <int> last(a); // creates a copy of array 'a'
 
@@ -29,7 +30,7 @@ int main(){
     cout<<"Size is -> "<<myVector.size()<<endl;         // 3
 
     cout<<"Front Element is "<<myVector.front()<<endl;
-    cout<<"Back Element is "<<myVector.front()<<endl;
+    cout<<"Back Element is "<<myVector.back()<<endl;
 
     // Iterate over the elements of the vector
     cout << "Before Pop: ";
@@ -56,3 +57,20 @@ int main(){
     
     return 0;
 }
+
+// Time Complexity of Vector operations
+// Operation	Time Complexity
+// push_back	O(1)
+// pop_back	O(1)
+// insert	O(n)
+// erase	O(n)
+// swap	O(1)
+// resize	O(n)
+// clear	O(n)
+// at	O(1)
+// front	O(1)
+// back	O(1)
+// size	O(1)
+// max_size	O(1)
+// empty	O(1)
+// capacity	O(1)
