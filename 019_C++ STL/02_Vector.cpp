@@ -32,6 +32,10 @@ int main(){
     cout<<"Front Element is "<<myVector.front()<<endl;
     cout<<"Back Element is "<<myVector.back()<<endl;
 
+    // Inserting elements at a particular position
+    myVector.insert(myVector.begin(), 0);
+    myVector.insert(myVector.begin()+2, 4);
+
     // Iterate over the elements of the vector
     cout << "Before Pop: ";
     for (int element : myVector) {
